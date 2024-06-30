@@ -1,0 +1,27 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon",
+    "migration:generate": "drizzle-kit generate",
+    "migraition:push": "node -r esbuild-register db/migrate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "pg": "^8.12.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.22.8"
+  }
+}
